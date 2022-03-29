@@ -52,6 +52,8 @@
         <th>Name</th>
         <th>Username</th>
         <th>Email</th>
+        <th>Company Name</th>
+        <th>Website</th>
         <th>Address</th>
       </tr>
     </thead>
@@ -160,6 +162,8 @@
             temp += "<td>" + itemData.name + "</td>";
             temp += "<td>" + itemData.username + "</td>";
             temp += "<td>" + itemData.email + "</td>";
+            temp += "<td>" + itemData.company.name + "</td>";
+            temp += "<td>" + itemData.website + "</td>";
             temp += "<td>" + itemData.address.street  + "</td></tr>";
           });
           document.getElementById('data').innerHTML = temp;
